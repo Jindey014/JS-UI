@@ -68,48 +68,83 @@
 
 
     <!-- carousel -->
-    <section id="carousel">
-        <div class="title">
-            <h1 class="">Popular places</h1>
-            <div class="swiper fade-in">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <!-- <div class="swiper-slide">
-                        <img src="images/slide2.jpeg" alt="">
-                        <div class="layer">
-                            <h3>VIEW DETAILS</h3>
+    <section class="carousel">
+        <section id="carousel">
+            <div class="title">
+                <h1 class="">Popular places</h1>
+                <div class="swiper fade-in">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images/slide2.jpeg" alt="">
+                            <div class="layer">
+                                <h3>Title One</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia nisi aliquam veritatis
+                                    exercitationem non ipsam et perferendis, assumenda doloribus nam quos! Velit blanditiis
+                                    nobis tenetur in, possimus inventore quaerat ab aperiam eaque. Nobis.
+                                    <button>
+                                        See More
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/slide1.jpeg" alt="">
+                            <div class="layer">
+                                <h3>Title Two</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia nisi aliquam veritatis
+                                    exercitationem non ipsam et
+                                    perferendis, assumenda doloribus nam quos! Velit blanditiis nobis tenetur in, possimus
+                                    inventore quaerat ab aperiam
+                                    eaque. Nobis.
+                                    <button>
+                                        See More
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/slide3.jpeg" alt="">
+                            <div class="layer">
+                                <h3>Title Three</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia nisi aliquam veritatis
+                                    exercitationem non ipsam et
+                                    perferendis, assumenda doloribus nam quos! Velit blanditiis nobis tenetur in, possimus
+                                    inventore quaerat ab aperiam
+                                    eaque. Nobis.
+                                    <button>
+                                        See More
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/slide4.jpg" alt="">
+                            <div class="layer">
+                                <h3>Title Four</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia nisi aliquam veritatis
+                                    exercitationem non ipsam et
+                                    perferendis, assumenda doloribus nam quos! Velit blanditiis nobis tenetur in, possimus
+                                    inventore quaerat ab aperiam
+                                    eaque. Nobis.
+                                    <button>
+                                        See More
+                                    </button>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="images/slide1.jpeg" alt="">
-                        <div class="layer">
-                            <h3>VIEW DETAILS</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/slide3.jpeg" alt="">
-                        <div class="layer">
-                            <h3>VIEW DETAILS</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/slide4.jpg" alt="">
-                        <div class="layer">
-                            <h3>VIEW DETAILS</h3>
-                        </div>
-                    </div> -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
-        </div>
+        </section>
     </section>
-
 
 
 
@@ -161,25 +196,53 @@
 
         });
     </script>
-    
+
     <!-- testing -->
-    <script>
+    <!-- <script>
         const test = "Hello there";
+        const images = [
+                {
+                    id: "1",
+                    img: "images/slide2.jpeg",
+                    title: "First Place",
+                    description: "kjfkldsjfkldsjfdklsjfalkdsjflkadsf dsjfklad fjadslk fdjjkfldjflkds kldsjf akldfjad slkfajlkdfjdsklf jds kldj fdlskf"
+                },
+                {
+                    id: "2",
+                    img: "images/slide1.jpeg",
+                    title: "Second Place",
+                    description: "kjfkldsjfkldsjfdklsjfalkdsjflkadsf dsjfklad fjadslk fdjjkfldjflkds kldsjf akldfjad slkfajlkdfjdsklf jds kldj fdlskf"
+                },
+                {
+                    id: "3",
+                    img: "images/slide3.jpeg",
+                    title: "Third Place",
+                    description: "kjfkldsjfkldsjfdklsjfalkdsjflkadsf dsjfklad fjadslk fdjjkfldjflkds kldsjf akldfjad slkfajlkdfjdsklf jds kldj fdlskf"
+                },
+                {
+                    id: "4",
+                    img: "images/slide4.jpg",
+                    title: "Fourth  Place",
+                    description: "kjfkldsjfkldsjfdklsjfalkdsjflkadsf dsjfklad fjadslk fdjjkfldjflkds kldsjf akldfjad slkfajlkdfjdsklf jds kldj fdlskf"
+                },
+            ]
         const clicker = document.querySelector(".swiper-wrapper")
 
-        clicker.addEventListener("Click", function (e) {
+        clicker.addEventListener("click", function (e) {
             e.preventDefault();
 
             const testValue = test;
+            // const imagesValue = images.value;
 
             localStorage.setItem("test_value", testValue);
+            // localStorage.setItem("myobject", JSON.stringify(imagesValue));
 
 
             window.location.href = "details.html"
         })
 
 
-    </script>
+    </script> -->
 
 </body>
 

@@ -6,15 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details of Places</title>
+    <link rel="stylesheet" href="./css/details.css">
+    <script src="https://kit.fontawesome.com/3698113056.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div> This is the details page</div>
-    <div class="hello"> </div>
-    <script>
-        const testValue = localStorage.getItem('test_value');
-        document.querySelector(".hello").textContent = testValue;
-    </script>
+
+    <!-- navbar -->
+    <div id="details" class="details">
+        <div class="fixed-nav">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="images/guide.png" alt="logo" class="logo">
+                </div>
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">contact us</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scroll-link">login <i class="fa-solid fa-caret-down"></i></a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li><a href="#">Login as User</a></li>
+                                    <li><a href="#">Login as Guide</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#tours" class="scroll-link"><i class="fa-solid fa-bars nav-toggle"></i></a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li><a href="#">Yeet the Guide</a></li>
+                                    <li><a href="#">Yeet the Guide's Son</a></li>
+                                    <li><a href="#">Hail Hitler</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- INFO -->
+        <section id="information">
+            <div class="information">
+                <div class="image">
+                    <img src="./images/slide2.jpeg" alt="">
+                </div>
+                <div class="info">
+                    <h2>Title Four</h2>
+                    <h2 class="bold">Description:</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                        qui repudiandae
+                        quod, eius
+                        ipsam
+                        facere nostrum reprehenderit quae. Cumque illo mollitia minus laborum natus magnam officia omnis
+                        asperiores maiores impedit pariatur ea earum dolorem tenetur corrupti eligendi, molestias
+                        blanditiis
+                        ad
+                        accusamus perspiciatis..</p>
+                    <h2 class="bold">Tags:</h2>
+                    <button>Need a Guide</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <section id="footer">
+        <p>copyright &copy; I dont know what to write here tbh <span class="date"></span> .all rights reserved</p>
+    </section>
+    <!-- back to top link -->
+    <a href="#details" class="scroll-link top-link show-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="./js/details.js"></script>
 </body>
 
 </html>

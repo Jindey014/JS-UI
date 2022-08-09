@@ -87,24 +87,24 @@ const images = [
     },
 ]
 
-const swiperSlide = document.querySelector(".swiper-wrapper")
+// const swiperSlide = document.querySelector(".swiper-wrapper")
 
-window.addEventListener("DOMContentLoaded", function () {
-    displaySwiperImages(images)
-})
+// window.addEventListener("DOMContentLoaded", function () {
+//     displaySwiperImages(images)
+// })
 
-function displaySwiperImages(swiperImages) {
-    let swiperImage = swiperImages.map(function (item) {
-        return `<div class="swiper-slide">
-                        <img src=${item.img} alt="">
-                        <div class="layer">
-                            <h3>VIEW DETAILS</h3>
-                        </div>
-                    </div>`;
-    })
-    swiperImage = swiperImage.join("")
-    swiperSlide.innerHTML = swiperImage
-}
+// function displaySwiperImages(swiperImages) {
+//     let swiperImage = swiperImages.map(function (item) {
+//         return `<div class="swiper-slide">
+//                         <img src=${item.img} alt="">
+//                         <div class="layer">
+//                             <h3>VIEW DETAILS</h3>
+//                         </div>
+//                     </div>`;
+//     })
+//     swiperImage = swiperImage.join("")
+//     swiperSlide.innerHTML = swiperImage
+// }
 
 
 
